@@ -80,7 +80,7 @@ func GetContainerPatch() corev1.Container {
 
 // StatefulsetPatch will patch the resource.
 func StatefulsetPatch(envMap map[string]string) error {
-	resource, err := GetStatefulset(envMap["namespace"], envMap["resourceName"])
+	resource, err := GetStatefulset(envMap["resourceName"], envMap["namespace"])
 	if err != nil {
 		return err
 	}
