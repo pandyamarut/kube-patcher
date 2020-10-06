@@ -12,7 +12,6 @@ var RestConfig *rest.Config
 // ClientSet will be used globally across different packages
 var ClientSet kubernetes.Interface
 
-
 // NewRestConfig will create a new InClusterConfig
 func NewRestConfig() (*rest.Config, error) {
 	restConfig, err := rest.InClusterConfig()
