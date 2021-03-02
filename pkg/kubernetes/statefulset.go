@@ -21,7 +21,8 @@ func GetStatefulset(name, namespace string) (*v1.StatefulSet, error) {
 	return statefulset, nil
 }
 
-// GetContainerPatch will return patch
+// GetContainerPatch will return patch, please edit the below function to add the, 
+// patch in any of the k8s config. 
 func GetContainerPatch() corev1.Container {
 	return corev1.Container{
 		Env: []corev1.EnvVar{
